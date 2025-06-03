@@ -1,5 +1,9 @@
+# Readmes
+*.md
+
 # Git
 .git
+.github
 .gitignore
 .gitattributes
 

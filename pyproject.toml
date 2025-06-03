@@ -1,6 +1,6 @@
 [project]
 name = "matching-service"
-version = "0.1.0"
+version = "0.1.1"
 description = "A matching service for the UofG SPA app"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -8,7 +8,8 @@ dependencies = [
     "amply==0.1.6",
     "docutils==0.20.1",
     "fastapi[standard]>=0.115.5",
-    "numpy==1.24.4",
+    "numpy==1.25.0",
     "pulp==2.7.0",
     "pyparsing==3.1.1",
+    "uvicorn"
 ]
