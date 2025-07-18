@@ -31,4 +31,7 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/pkitazos/matching-service:latest,ghcr.io/pkitazos/matching-service:${{ steps.date.outputs.date }},ghcr.io/pkitazos/matching-service:${{ github.sha }}
+          tags: |
+            ghcr.io/pkitazos/matching-service:latest
+            ghcr.io/pkitazos/matching-service:${{ steps.date.outputs.date }}
+            ghcr.io/pkitazos/matching-service:${{ github.sha }}

@@ -1,7 +1,7 @@
-FROM python:3.11.12-alpine3.22
+FROM python:3.11.13-alpine3.20
 LABEL org.opencontainers.image.source="https://github.com/pkitazos/matching-service"
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/
-RUN adduser -D matching
+RUN apk update && apk upgrade --no-cache && adduser -D matching
 WORKDIR /app
 
 COPY pyproject.toml uv.lock .python-version .
